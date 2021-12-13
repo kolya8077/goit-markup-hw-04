@@ -348,6 +348,7 @@ address {
 }
 .social-a {
   display: inline-block;
+  fill: var(--social-link-color);
   padding: 12px;
   border-radius: 50%;
 
