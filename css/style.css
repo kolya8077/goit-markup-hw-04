@@ -424,7 +424,6 @@ address {
   flex-wrap: wrap;
 }
 .card-bg {
-  cursor: pointer;
   width: 370px;
   margin-bottom: 30px;
   margin-right: 30px;
