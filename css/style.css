@@ -106,7 +106,7 @@ address {
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
-.contacts-item {
+.contacts {
   display: flex;
   align-items: center;
 }
@@ -118,6 +118,9 @@ address {
 }
 .heder-img:hover svg {
   fill: var(--them-color);
+}
+.heder-img:hover {
+  color: var(--them-color);
 }
 .contacts {
   padding-top: 32px;
