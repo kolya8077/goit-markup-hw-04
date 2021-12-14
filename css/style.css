@@ -116,10 +116,12 @@ address {
 .heder-img svg {
   fill: var(--text-secondary-lighter);
 }
-.heder-img:hover svg {
+.heder-img:hover svg,
+.heder-img:focus svg {
   fill: var(--them-color);
 }
-.heder-img:hover {
+.heder-img:hover,
+.heder-img:focus {
   color: var(--them-color);
 }
 .contacts {
@@ -331,11 +333,12 @@ address {
 .social-a svg {
   fill: var(--social-link-color);
 }
-.social-li:hover {
+.social-li:hover,
+.social-li:focus {
   border-radius: 50%;
   background-color: var(--them-color);
 }
-.social-a:hover svg {
+.social-a:hover svg .social-a:focus svg {
   fill: var(--text-secondary);
 }
 /* team */
