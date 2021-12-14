@@ -136,9 +136,14 @@ address {
   letter-spacing: 0.02em;
 }
 
-.contacts:hover,
+.contacts:hover {
+  color: var(--them-color);
+}
 .contacts:focus {
   color: var(--them-color);
+}
+.contacts:focus svg {
+  fill: var(--them-color);
 }
 
 /* =================header================= */
@@ -280,11 +285,10 @@ address {
   width: 270px;
   height: 428px;
   padding-bottom: 30px;
-}
-.team-box-list:hover {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .conteiner-img {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -333,12 +337,18 @@ address {
 .social-a svg {
   fill: var(--social-link-color);
 }
-.social-li:hover,
-.social-li:focus {
+.social-li:hover {
   border-radius: 50%;
   background-color: var(--them-color);
 }
-.social-a:hover svg .social-a:focus svg {
+
+.social-a:hover svg {
+  fill: var(--text-secondary);
+}
+.social-a:focus {
+  background-color: var(--them-color);
+}
+.social-a:focus svg {
   fill: var(--text-secondary);
 }
 /* team */
@@ -363,26 +373,29 @@ address {
 }
 .customers {
   display: flex;
-  border: 1px solid var(--social-link-color);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  pointer-events: painted;
 }
 .customers + .customers {
   margin-left: 30px;
 }
 .customer {
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
   padding: 16px 32px;
 }
 .customer svg {
   fill: var(--social-link-color);
 }
 
-.customer:hover svg {
+.customer:hover svg,
+.customer:focus svg {
   fill: var(--them-color);
 }
-.customers:hover {
+.customer:hover {
+  border-color: var(--them-color);
+}
+.customer:focus {
   border-color: var(--them-color);
 }
 /* regular customers==== */
@@ -549,11 +562,20 @@ address {
   margin-left: 10px;
 }
 .footer-social-a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-a {
   fill: var(--text-secondary);
-  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 .footer-social-li:hover {
+  background-color: var(--them-color);
+}
+.footer-social-a:focus {
   background-color: var(--them-color);
 }
 /* =================footer================= */ ;
