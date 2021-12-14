@@ -471,8 +471,6 @@ address {
 /* =================footer================= */
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-box {
   display: flex;
@@ -485,6 +483,8 @@ address {
 }
 .footer-box-one {
   width: 231px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .webstudio-footer {
   display: block;
@@ -518,6 +518,8 @@ address {
 .footer-box-two {
   width: 206px;
   margin-left: 70px;
+  padding-top: 75px;
+  padding-bottom: 97px;
 }
 .box-two-hero {
   font-weight: 700;
