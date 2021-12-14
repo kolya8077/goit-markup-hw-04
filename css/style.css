@@ -106,7 +106,13 @@ address {
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
-
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+.tel-mail {
+  margin-right: 10px;
+}
 .heder-img svg {
   fill: var(--text-secondary-lighter);
 }
