@@ -264,12 +264,16 @@ address {
   justify-content: space-between;
 }
 .team-box-list {
+  box-sizing: border-box;
   background-color: var(--text-secondary);
   width: 270px;
   height: 428px;
   padding-bottom: 30px;
 }
-
+.team-box-list:hover {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .conteiner-img {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -414,9 +418,14 @@ address {
   flex-wrap: wrap;
 }
 .card-bg {
+  cursor: pointer;
   width: 370px;
   margin-bottom: 30px;
   margin-right: 30px;
+}
+.card-bg:hover {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card-bg:nth-child(3n + 3) {
   margin-right: 0;
